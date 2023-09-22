@@ -9,5 +9,5 @@ def about(request):
 
 def finch_index(request):
     return render(request, 'finch/index.html', {
-      'finch': finchs
+      'finch': finches
       })
