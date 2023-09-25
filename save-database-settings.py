@@ -1,3 +1,7 @@
+import environ
+environ.Env()
+environ.Env.read_env()
+
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
