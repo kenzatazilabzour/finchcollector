@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
-<h2>Edit Finch</h2>
-<form method="post">
+<h1>Add Finch</h1>
+<form action="" method="POST">
   {% csrf_token %}
   <table>
     {{ form.as_table }}

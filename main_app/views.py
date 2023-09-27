@@ -15,7 +15,7 @@ def finch_index(request):
 
 def finch_detail(request, finch_id):
     finch = Finch.objects.get(id=finch_id)
-    return render(request, 'finch/detail.html', {'finches': finch})
+    return render(request, 'finch/detail.html', {'finch': finch})
 
 class FinchCreate(CreateView):
   model = Finch
