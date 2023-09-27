@@ -20,4 +20,20 @@
   </div>
 </div>
 
+<h3>Feedings:</h3>
+<ul>
+  {% for feeding in feedings %}
+  <li>{{ feeding.date }} - {{ feeding.meal }}</li>
+  {% empty %}
+  <li>No feedings recorded</li>
+  {% endfor %}
+</ul>
+
+<h3>Add Feeding:</h3>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Add Feeding</button>
+</form>
+
 {% endblock %}
