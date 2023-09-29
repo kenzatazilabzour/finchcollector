@@ -32,7 +32,7 @@ class Feeding(models.Model):
     choices=MEALS,
     default=MEALS[0][0]
   )
-  Finch = models.ForeignKey(
+  finch = models.ForeignKey(
     Finch,
     on_delete=models.CASCADE
   )
